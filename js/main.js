@@ -10,7 +10,7 @@ function textoBatismo() {
     $("#descricao").html(`
             <h1>Batismo de Mergulho</h1>
             <p>Experimente a sensação de respirar embaixo d'água!</p>
-            <div class="imagens_descricao">
+            <div class="imagens">
                 <figure>
                     <img src="${imgPath}/batismo_img1.jpg" alt="mergulhadores com tartaruga">
                     <figcaption>Mergulhadores com tartaruga verde.</figcaption>
@@ -32,7 +32,7 @@ function textoBasico() {
     $("#descricao").html(`
             <h1>Curso Básico de Mergulho</h1>
             <p>Bem-vindo ao curso básicom de mergulho, sua porta de entrada para o mundo do mergulho.</p>
-            <div class="imagens_descricao">
+            <div class="imagens">
                 <figure>
                     <img src="${imgPath}/basico_img1.jpg" alt="aluno na piscina">
                     <figcaption>Aprenda em local controlado.</figcaption>
@@ -54,7 +54,7 @@ function textoAvancado() {
     $("#descricao").html(`
             <h1>Curso Avançado de Mergulho</h1>
             <p>Aprimore suas habilidades como mergulhador e disfrute de novas aventuras.</p>
-            <div class="imagens_descricao">
+            <div class="imagens">
                 <figure>
                     <img src="${imgPath}/adv_img1.jpg" alt="aluno com bússola">
                     <figcaption>Aperfeiçoe sua navegação subaquática.</figcaption>
@@ -76,7 +76,7 @@ function textoEspec() {
     $("#descricao").html(`
             <h1>Especializações</h1>
             <p>Dê continuidade à sua formação. Aprofunde seus conhecimentos, descubra tudo o que o mergulho pode te oferecer!</br>Confira a lista de cursos oferecidos clicando no menu superior.</p>
-            <div class="imagens_descricao">
+            <div class="imagens">
                 <figure>
                     <img src="${imgPath}/espec_img1.jpg" alt="mergulhador passando por anel de ar">
                     <figcaption>Aprimore suas habilidades!</figcaption>

@@ -20,7 +20,7 @@
     <body>
             <header>
                     <section class="cabecalho">
-                        <div class="logotipo">
+                        <div class="cabecalhologo">
                             <img src="../images/scuba-logo.png" alt="scubalogotipo">
                         </div>
                         <div class="cabecalhotexto">
@@ -29,37 +29,35 @@
                         </div>
                     </section>
                 </header>
-        <nav>
-            <ul>
-                <a href="../index.html"><li>Home</li></a>
-                <a href="cursos.html"><li>Especializações</li></a>
-                <a href="contato.html"><li>Contato</li></a>
-                <a href="sobre.html"><li>Sobre</li></a>
-            </ul>
-        </nav>
+                <nav>
+                    <ul>
+                        <li id="home"><a href="../index.html">Home</a></li>
+                        <li id="espec"><a href="./espec.html">Especializações</a></li>
+                        <li id="contato"><a href="./contato.html">Contato</a></li>
+                        <li id="sobre"><a href="./sobre.html">Sobre</a></li>
+                    </ul>
+                </nav>
 
         <section class="conteudo">
-            <section class="cursos">
-                <div class="caixa batismo" onclick="textoBatismo();">
+            <section class="lateral">
+                <div class="atividade batismo" onclick="textoBatismo();">
                     <h1>Batismo de Mergulho</h1>
-        
                 </div>
-                <div class="caixa basico" onclick="textoBasico();">
+                <div class="atividade basico" onclick="textoBasico();">
                     <h1>Curso Básico</h1>
                 </div>
-                <div class="caixa avancado" onclick="textoAvancado();">
+                <div class="atividade avancado" onclick="textoAvancado();">
                     <h1>Curso Avançado</h1>
                 </div>
-                <div class="caixa especializacao" onclick="textoEspec();">
+                <div class="atividade especializacao" onclick="textoEspec();">
                     <h1>Especializações</h1>
                 </div>
             </section>
 
-        <section class="descricao" id="descricao">
-            <section class="especializacoes">
-                <h1 id="desc_titulo">Especializações de Mergulho</h1>
+        <section class="principal" id="descricao">
+            <h1>Especializações de Mergulho</h1>
 
-                <h2 onclick="exibir('adpt-desc')">Adaptative Techniques</h2>
+                <h3 onclick="exibir('adpt-desc')">Adaptative Techniques</h3>
                 <p class="espec-descricao" id="adpt-desc" hidden>Torne-se mais consciente e ciente das considerações
                     individuais ao introduzir pessoas com deficiência
                     ao mergulho ou ao mergulho livre.<br>
@@ -68,7 +66,7 @@
                     centradas no aluno e prescritivas ao adaptar as técnicas para atender às necessidades dos
                     mergulhadores.</p>
 
-                <h2 onclick="exibir('coral-desc')">AWARE Coral Reef Conservation</h2>
+                <h3 onclick="exibir('coral-desc')">AWARE Coral Reef Conservation</h3>
                 <p class="espec-descricao" id="coral-desc" hidden>Torne-se consciente da fragilidade de recifes de
                     corais e como você pode ajudar a preservá-los. O que
                     você aprende com AWARE - Coral Reef Conservation, curso de especialidade de conservação ensina sobre
@@ -76,14 +74,14 @@
                     O curso também irá familiariza-lo com o estado atual dos recifes de coral do mundo e como você pode
                     ajudar.</p>
 
-                <h2 onclick="exibir('deep-desc')">Deep Diver</h2>
+                <h3 onclick="exibir('deep-desc')">Deep Diver</h3>
                 <p class="espec-descricao" id="deep-desc" hidden>O curso de especialidade Deep Diver PADI lhe oferece a
                     oportunidade única de visitar áreas profundas
                     para ver coisas com as quais as outras pessoas só podem sonhar. Neste curso, você descobrirá o que é
                     mergulhar além de 18 metros/60 pés de profundidade. Lá embaixo, as coisas são diferentes.<br>
                     Para ir fundo é preciso ter mais treinamento. E é aqui que você o obtém!</p>
 
-                <h2 onclick="exibir('foto-desc')">Digital Underwater Photographer</h2>
+                <h3 onclick="exibir('foto-desc')">Digital Underwater Photographer</h3>
                 <p class="espec-descricao" id="foto-desc" hidden>A fotografia subaquática é uma das especialidades de
                     mergulho mais populares e a ascensão da fotografia subaquática digital tornou-a mais fácil e
                     divertida do que nunca.<br>
@@ -91,7 +89,7 @@
                     equipamentos digitais atuais, seja com uma câmera de apontar e disparar ou uma sofisticada D-SLR
                     como os profissionais.</p>
 
-                <h2 onclick="exibir('o2-desc')">Emergency Oxygen Provider</h2>
+                <h3 onclick="exibir('o2-desc')">Emergency Oxygen Provider</h3>
                 <p class="espec-descricao" id="o2-desc" hidden>Quando ocorre um acidente de mergulho, a capacidade de
                     reconhecer o problema e responder com os devidos cuidados pode acelerar a recuperação do mergulhador
                     e minimizar os efeitos duradouros.<br>
@@ -99,14 +97,14 @@
                     de mergulho e afogamento não fatal. Você aprenderá os fundamentos do reconhecimento de lesões por
                     mergulho junto com a resposta e o gerenciamento da situação.</p>
 
-                <h2 onclick="exibir('ean-desc')">Enriched Air Diver</h2>
+                <h3 onclick="exibir('ean-desc')">Enriched Air Diver</h3>
                 <p class="espec-descricao" id="ean-desc" hidden>Aumente o seu tempo de fundo com o curso de Ar
                     Enriquecido (Nitrox).<br>
                     O curso Nitrox ou EAN está direcionado a mergulhadores certificados que desejam um maior
                     conhecimento sobre os limites não descompressivos e assim estende-los com o uso de uma mistura
                     gasosa diferente do ar respirável.</p>
 
-                <h2 onclick="exibir('equip-desc')">Equipment Specialist</h2>
+                <h3 onclick="exibir('equip-desc')">Equipment Specialist</h3>
                 <p class="espec-descricao" id="equip-desc" hidden>O curso de Especialista em Equipamentos vai te ensinar
                     a realizar a manutenção correta de vários equipamentos, o cuidado diário e como realizar pequenos
                     reparos. Você também obtém informações básicas interessantes sobre como seu equipamento funciona e
@@ -115,7 +113,7 @@
                     Você NÃO se tornará um técnico de manutenção, mas você estará preparado para a manutenção básica de
                     seus equipamentos de mergulho, cuidados e ajustes com os quais você terá que lidar diariamente.</p>
 
-                <h2 onclick="exibir('night-desc')">Night Diver</h2>
+                <h3 onclick="exibir('night-desc')">Night Diver</h3>
                 <p class="espec-descricao" id="night-desc" hidden>Veja seus pontos de mergulho favoritos de uma
                     perspectiva totalmente nova à noite. O recife ganha vida, já que muitos dos habitantes da luz do dia
                     se refugiam na segurança de tocas e bordas, enquanto criaturas noturnas
@@ -123,7 +121,7 @@
                     O curso de especialização em Mergulho Noturno concentra-se nas habilidades e conhecimentos
                     específicos necessários para aumentar sua diversão e segurança durante as imersões noturnas.</p>
 
-                <h2 onclick="exibir('ppb-desc')">Peak Performance Buoyancy</h2>
+                <h3 onclick="exibir('ppb-desc')">Peak Performance Buoyancy</h3>
                 <p class="espec-descricao" id="ppb-desc" hidden>O domínio da flutuabilidade é o que separa os bons
                     mergulhadores dos excelentes mergulhadores. Seja um mergulhador com amplo controle de sua
                     flutuabilidade, tenha capacidade de levitar próximo do fundo e examinar organismos subaquáticos sem
@@ -132,7 +130,7 @@
                     aprenderá como usar a quantidade precisa de lastro para ter controle, postura e equilíbrio durante
                     seus mergulhos.</p>
 
-                <h2 onclick="exibir('aware-desc')">Project Aware</h2>
+                <h3 onclick="exibir('aware-desc')">Project Aware</h3>
                 <p class="espec-descricao" id="aware-desc" hidden> Aprenda sobre alguns dos problemas mais prementes que
                     afligem os ecossistemas aquáticos vulneráveis e as medidas cotidianas que você pode tomar para
                     ajudar a preservá-los. É informativo, interessante e, mais importante, você aprenderá como
@@ -140,7 +138,7 @@
                     Além de concluir o curso Project AWARE® Specialist, você pode se tornar um parceiro nos esforços
                     para preservar o meio ambiente subaquático, o ecossistema oceânico e problemas costeiros.</p>
 
-                <h2 onclick="exibir('recovery-desc')">Search & Recovery</h2>
+                <h3 onclick="exibir('recovery-desc')">Search & Recovery</h3>
                 <p class="espec-descricao" id="recovery-desc" hidden>Quando você vai pescar, passear de barco, mergulhar
                     e fazer outras atividades aquáticas, as coisas podem cair por acidente. Se você não conhece as
                     técnicas em busca e recuperação de objetos perdidos, você teria menos chance de encontrar esses
@@ -148,7 +146,7 @@
                     Com a especialização de Busca e Recuperação PADI, você poderá desenvolver habilidades que ajudarão
                     você a encontrar e recuperar de forma eficaz e eficiente objetos debaixo d'água.</p>
 
-                <h2 onclick="exibir('wreck-desc')">Wreck Diver</h2>
+                <h3 onclick="exibir('wreck-desc')">Wreck Diver</h3>
                 <p class="espec-descricao" id="wreck-desc" hidden> Curso de Mergulho em Naufrágios é talvez o curso mais
                     procurado! Mergulhar em um naufrágio é mergulhar no passado. Seja em navios, aviões ou carros, é
                     como entrar em verdadeiros portais do tempo. Descubra porque cada vez mais pessoas se especializam
@@ -156,9 +154,6 @@
                     É ideal para um melhor aproveitamento de seus mergulhos, já que você aprenderá técnicas de
                     penetração, sinalização, procedimentos de emergência, navegação, mapeamento e identificação dos
                     pontos de um naufrágio!</p>
-            
-
-            </section>
         </section>
 
 
