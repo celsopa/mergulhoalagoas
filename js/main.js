@@ -7,6 +7,10 @@ if (path.indexOf("index.html") == -1 && path != "/mergulhoalagoas/"){
 }
 
 function textoBatismo() {
+    $(`#home`).css("border-bottom", "3px solid rgb(88, 88, 165)");
+    $("a").not(`#home`).css("border-bottom", "3px solid rgb(0, 0, 65)");
+
+
     $("#descricao").html(`
             <h1>Batismo de Mergulho</h1>
             <p>Experimente a sensação de respirar embaixo d'água!</p>
@@ -29,6 +33,10 @@ function textoBatismo() {
 
 
 function textoBasico() {
+    $(`#home`).css("border-bottom", "3px solid rgb(88, 88, 165)");
+    $("a").not(`#home`).css("border-bottom", "3px solid rgb(0, 0, 65)");
+
+
     $("#descricao").html(`
             <h1>Curso Básico de Mergulho</h1>
             <p>Bem-vindo ao curso básicom de mergulho, sua porta de entrada para o mundo do mergulho.</p>
@@ -51,6 +59,10 @@ function textoBasico() {
 
 
 function textoAvancado() {
+    $(`#home`).css("border-bottom", "3px solid rgb(88, 88, 165)");
+    $("a").not(`#home`).css("border-bottom", "3px solid rgb(0, 0, 65)");
+
+
     $("#descricao").html(`
             <h1>Curso Avançado de Mergulho</h1>
             <p>Aprimore suas habilidades como mergulhador e disfrute de novas aventuras.</p>
@@ -73,6 +85,10 @@ function textoAvancado() {
 
 
 function textoEspec() {
+    $(`#home`).css("border-bottom", "3px solid rgb(88, 88, 165)");
+    $("a").not(`#home`).css("border-bottom", "3px solid rgb(0, 0, 65)");
+    
+
     $("#descricao").html(`
             <h1>Especializações</h1>
             <p>Dê continuidade à sua formação. Aprofunde seus conhecimentos, descubra tudo o que o mergulho pode te oferecer!</br>Confira a lista de cursos oferecidos clicando no menu superior.</p>
@@ -99,4 +115,11 @@ function exibir(objeto) {
     $(".espec-descricao")
         .not("#" + objeto)
         .hide();
+}
+
+function marcado(objeto){
+    // alert(`${objeto}`);
+    // $(`#${objeto}`).css("color", "red");
+    $(`#${objeto}`).css("border-bottom", "3px solid rgb(88, 88, 165)");
+    $("a").not(`#${objeto}`).css("border-bottom", "3px solid rgb(0, 0, 65)");
 }

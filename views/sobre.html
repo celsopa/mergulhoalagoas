@@ -12,31 +12,32 @@
         <meta name='theme-color' content='#fafafa'>
 
         <link rel='manifest' href='#'>
-        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"> <!-- Place favicon.ico in the root directory -->
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+        <!-- Place favicon.ico in the root directory -->
 
         <link rel='stylesheet' href='../css/main.css'>
     </head>
 
-    <body>
-            <header>
-                    <section class="cabecalho">
-                        <div class="cabecalhologo">
-                            <img src="../images/scuba-logo.png" alt="scubalogotipo">
-                        </div>
-                        <div class="cabecalhotexto">
-                            <h1>Mergulho Alagoas</h1>
-                            <h2>Cursos e Experiências de Mergulho em Maceió</h2>
-                        </div>
-                    </section>
-                </header>
-                <nav>
-                    <ul>
-                        <li id="home"><a href="../index.html">Home</a></li>
-                        <li id="espec"><a href="./espec.html">Especializações</a></li>
-                        <li id="contato"><a href="./contato.html">Contato</a></li>
-                        <li id="sobre"><a href="./sobre.html">Sobre</a></li>
-                    </ul>
-                </nav>
+    <body onload="marcado('sobre')">
+        <header>
+            <section class="cabecalho">
+                <div class="cabecalhologo">
+                    <img src="../images/scuba-logo.png" alt="scubalogotipo">
+                </div>
+                <div class="cabecalhotexto">
+                    <h1>Mergulho Alagoas</h1>
+                    <h2>Cursos e Experiências de Mergulho em Maceió</h2>
+                </div>
+            </section>
+        </header>
+        <nav>
+            <ul>
+                <li><a id="home" href="../index.html">Home</a></li>
+                <li><a id="espec" href="./espec.html">Especializações</a></li>
+                <li><a id="contato" href="./contato.html">Contato</a></li>
+                <li><a id="sobre" href="./sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
 
         <section class="conteudo">
             <section class="lateral sobre">
@@ -77,11 +78,10 @@
 
             </section>
         </section>
-
-
-
-
-
+        <footer>
+            <p>Criado por Celso Pereira de Araújo&#9400;</p>
+            <p>INTW102 - Introdução às Tecnologias WEB</p>
+        </footer>
         <script src="https://code.jquery.com/jquery-3.4.1.js"
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
         </script>

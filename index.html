@@ -1,84 +1,91 @@
 <!doctype html>
 <html class='no-js' lang='pt-br'>
 
-<head>
-    <meta charset='utf-8'>
-    <title>Mergulho Alagoas - Centro de Mergulho | HOME</title> <!-- Titulo da pagina -->
-    <meta name='author' content='Celso Pereira de Araujo'> <!-- Autor da pagina -->
+    <head>
+        <meta charset='utf-8'>
+        <title>Mergulho Alagoas - Centro de Mergulho | HOME</title> <!-- Titulo da pagina -->
+        <meta name='author' content='Celso Pereira de Araujo'> <!-- Autor da pagina -->
 
-    <meta name='description' content=''> <!-- Descricao do conteudo da pagina -->
-    <meta name='keywords' content='aaaa, bbbb, ccc, xxxx'> <!-- keywords para sites de busca -->
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name='theme-color' content='#fafafa'>
+        <meta name='description' content=''> <!-- Descricao do conteudo da pagina -->
+        <meta name='keywords' content='aaaa, bbbb, ccc, xxxx'> <!-- keywords para sites de busca -->
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name='theme-color' content='#fafafa'>
 
-    <link rel='manifest' href='#'>
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"> <!-- Place favicon.ico in the root directory -->
+        <link rel='manifest' href='#'>
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+        <!-- Place favicon.ico in the root directory -->
 
-    <link rel='stylesheet' href='css/main.css'>
-</head>
+        <link rel='stylesheet' href='css/main.css'>
+    </head>
 
-<body>
-    <header>
-        <section class="cabecalho">
-            <div class="cabecalhologo">
-                <img src="./images/scuba-logo.png" alt="scubalogotipo">
-            </div>
-            <div class="cabecalhotexto">
-                <h1>Mergulho Alagoas</h1>
-                <h2>Cursos e Experiências de Mergulho em Maceió</h2>
-            </div>
+    <body onload="marcado('home')">
+        <header>
+            <section class="cabecalho">
+                <div class="cabecalhologo">
+                    <img src="./images/scuba-logo.png" alt="scubalogotipo">
+                </div>
+                <div class="cabecalhotexto">
+                    <h1>Mergulho Alagoas</h1>
+                    <h2>Cursos e Experiências de Mergulho em Maceió</h2>
+                </div>
+            </section>
+        </header>
+        <nav>
+            <ul>
+                <li><a id="home" href="./index.html">Home</a></li>
+                <li><a id="espec" href="./views/espec.html">Especializações</a></li>
+                <li><a id="contato" href="./views/contato.html">Contato</a></li>
+                <li><a id="sobre" href="./views/sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <section class="conteudo">
+            <section class="lateral">
+                <div class="atividade batismo" onclick="textoBatismo();">
+                    <h1>Batismo de Mergulho</h1>
+                </div>
+                <div class="atividade basico" onclick="textoBasico();">
+                    <h1>Curso Básico</h1>
+                </div>
+                <div class="atividade avancado" onclick="textoAvancado();">
+                    <h1>Curso Avançado</h1>
+                </div>
+                <div class="atividade especializacao" onclick="textoEspec();">
+                    <h1>Especializações</h1>
+                </div>
+            </section>
+
+            <section class="principal" id="descricao">
+                <h1>Seja Bem-Vindo ao Mundo do Mergulho</h1>
+                <p>Mergulho Alagoas é uma nova proposta de entretenimento e formação de mergulho.</p>
+                <p>Em parceria com outros dive centers e clubes da reagião oferecemos experiências de mergulho para
+                    pessoas com e sem certificação.</p>
+                <p>Também oferecemos cursos de mergulho, desde o nível básico aos primeiros níveis profissionais!</p>
+                <p>Navegue por nosso website e sinta-se à vontade para nos contatar.</p>
+                <div class="imagens">
+                    <figure>
+                        <img src="./images/index_img1.jpg" alt="mergulhadores e raia manta durante mergulho noturno">
+                        <figcaption>Raia manta durante mergulho noturno</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./images/index_img2.jpg" alt="mergulhador com tubarão">
+                        <figcaption>Mergulhador saudando um tubarão</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./images/index_img3.jpg" alt="grupo de mergulhadores">
+                        <figcaption>Mergulhadores prontos para a diversão</figcaption>
+                    </figure>
+                </div>
+            </section>
         </section>
-    </header>
-    <nav>
-        <ul>
-            <li id="home"><a href="./index.html">Home</a></li>
-            <li id="espec"><a href="./views/espec.html">Especializações</a></li>
-            <li id="contato"><a href="./views/contato.html">Contato</a></li>
-            <li id="sobre"><a href="./views/sobre.html">Sobre</a></li>
-        </ul>
-    </nav>
+        <footer>
+            <p>Criado por Celso Pereira de Araújo&#9400;</p>
+            <p>INTW102 - Introdução às Tecnologias WEB</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+        <script src='js/main.js'></script>
+    </body>
 
-    <section class="conteudo">
-        <section class="lateral">
-            <div class="atividade batismo" onclick="textoBatismo();">
-                <h1>Batismo de Mergulho</h1>
-            </div>
-            <div class="atividade basico" onclick="textoBasico();">
-                <h1>Curso Básico</h1>
-            </div>
-            <div class="atividade avancado" onclick="textoAvancado();">
-                <h1>Curso Avançado</h1>
-            </div>
-            <div class="atividade especializacao" onclick="textoEspec();">
-                <h1>Especializações</h1>
-            </div>
-        </section>
-    
-        <section class="principal" id="descricao">
-            <h1>Seja Bem-Vindo ao Mundo do Mergulho</h1>
-            <p>Mergulho Alagoas é uma nova proposta de entretenimento e formação de mergulho.</p>
-            <p>Em parceria com outros dive centers e clubes da reagião oferecemos experiências de mergulho para pessoas com e sem certificação.</p>
-            <p>Também oferecemos cursos de mergulho, desde o nível básico aos primeiros níveis profissionais!</p>
-            <p>Navegue por nosso website e sinta-se à vontade para nos contatar.</p>
-            <div class="imagens">
-                <figure>
-                    <img src="./images/index_img1.jpg" alt="mergulhadores e raia manta durante mergulho noturno">
-                    <figcaption>Raia manta durante mergulho noturno</figcaption>
-                </figure>
-                <figure>
-                    <img src="./images/index_img2.jpg" alt="mergulhador com tubarão">
-                    <figcaption>Mergulhador saudando um tubarão</figcaption>
-                </figure>
-                <figure>
-                    <img src="./images/index_img3.jpg" alt="grupo de mergulhadores">
-                    <figcaption>Mergulhadores prontos para a diversão</figcaption>
-                </figure>
-            </div>
-        </section>
-    </section>
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
-    </script>
-    <script src='js/main.js'></script>
-</body>
 </html>

@@ -42,7 +42,7 @@ nav ul li{
 nav ul li a{
     padding: 3px;
     display: inline-block;
-    color: black;
+    color: lightseagreen;
     text-decoration: none;
     border-bottom:3px solid rgb(0, 0, 65);
 }
@@ -55,6 +55,7 @@ nav ul li a:hover{
 .conteudo{
     background-color: rgb(0, 0, 65);
     display: flex;
+    
 }
 
 .lateral{
@@ -104,6 +105,7 @@ nav ul li a:hover{
     float: left;
     padding: 5px;
     width: 75%;
+    color: lightseagreen;
 }
 
 .principal h1{
@@ -144,14 +146,16 @@ nav ul li a:hover{
     position: relative;
     top: -10px;
     padding: 5px;
+    color: black;
 }
 
 .formulario{
     width: 60%;
     margin: 20px auto;
-    background-color: aliceblue;
+    background-color: lightskyblue;
     border-radius: 10px;
     padding: 10px;
+    color: black;
 }
 
 .formulario fieldset{
@@ -172,6 +176,11 @@ nav ul li a:hover{
 
 #btnenviar{
     width: 100px;
+}
+
+.sobre{
+    color: lightseagreen;
+    margin-bottom: 30px;
 }
 
 .sobre img{
@@ -199,6 +208,10 @@ nav ul li a:hover{
 .principal.sobre ul{
     padding-left: 20px; 
     list-style: none;
+}
+
+footer p{
+    text-align: center;
 }
 
 @media  screen and (min-width: 701px){
@@ -310,6 +323,10 @@ nav ul li a:hover{
         font-size: 18px;
         padding-left: 20px; 
         list-style: none;
+    }
+
+    footer p{
+        font-size: 12px;
     }
 }
 
@@ -423,6 +440,10 @@ nav ul li a:hover{
         padding-left: 20px; 
         list-style: none;
     }
+
+    footer p{
+        font-size: 9px;
+    }
 }
 
 @media  screen and (max-width: 350px){
@@ -534,6 +555,10 @@ nav ul li a:hover{
         font-size: 9px;
         padding-left: 20px; 
         list-style: none;
+    }
+
+    footer p{
+        font-size: 7px;
     }
 }
 
